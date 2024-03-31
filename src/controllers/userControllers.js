@@ -1,7 +1,7 @@
 import User from "../schema/userSchema.js";
 
 // Criar um novo usuário
-exports.createUser = async (req, res) => {
+export const createUser = async (req, res) => {
   try {
     const newUser = await User.create(req.body);
     res.status(201).json(newUser);
@@ -11,7 +11,7 @@ exports.createUser = async (req, res) => {
 };
 
 // Obter todos os usuários
-exports.getAllUsers = async (req, res) => {
+export const getAllUsers = async (req, res) => {
   try {
     const users = await User.find();
     res.status(200).json(users);
@@ -21,7 +21,7 @@ exports.getAllUsers = async (req, res) => {
 };
 
 // Obter um usuário por ID
-exports.getUserById = async (req, res) => {
+export const getUserById = async (req, res) => {
   try {
     const user = await User.findById(req.params.id);
     if (!user) {
@@ -34,7 +34,7 @@ exports.getUserById = async (req, res) => {
 };
 
 // Atualizar um usuário
-exports.updateUser = async (req, res) => {
+export const updateUser = async (req, res) => {
   try {
     const updatedUser = await User.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
@@ -49,7 +49,7 @@ exports.updateUser = async (req, res) => {
 };
 
 // Excluir um usuário
-exports.deleteUser = async (req, res) => {
+export const deleteUser = async (req, res) => {
   try {
     const deletedUser = await User.findByIdAndDelete(req.params.id);
     if (!deletedUser) {

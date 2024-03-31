@@ -1,18 +1,32 @@
 # Ecommerce backend
 
+![](assets/esquema_BD.png)
+
+# Indice
+
+- [Ecommerce backend](#ecommerce-backend)
+- [Indice](#indice)
+  - [📑 Sobre](#-sobre)
+  - [🚀 Tecnologias utilizadas](#-tecnologias-utilizadas)
+  - [📁 Como baixar o projeto](#-como-baixar-o-projeto)
+
 ## 📑 Sobre
 
 Este é o backend de um ecommerce
 
-## Tecnologias utilizadas
+---
+
+## 🚀 Tecnologias utilizadas
 
 o projeto foi desenvolvido utilizando as seguintes tecnologias
 
-- [node](https://reactjs.org)
-- [express]()
-- [mongodb]()
+- [node](https://nodejs.org/)
+- [express](https://expressjs.com/)
+- [mongodb](https://www.mongodb.com/)
 
-## Como baixar o projeto
+---
+
+## 📁 Como baixar o projeto
 
 ```bash
 

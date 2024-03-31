@@ -8,6 +8,8 @@
   - [Tecnologias utilizadas](#-tecnologias-utilizadas)
   - [Como baixar o projeto](#-como-baixar-o-projeto)
 
+---
+
 ## 📑 Sobre
 
 Este é o backend de um ecommerce

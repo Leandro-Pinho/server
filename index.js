@@ -1,7 +1,10 @@
 import express from "express";
 import dotenv from "dotenv";
+
 import Connection from "./src/db/mongodb.js";
+
 import userRoutes from "./src/routes/userRoutes.js";
+import productRoutes from "./src/routes/productRoutes.js";
 
 const app = express();
 const Port = 8080;
@@ -10,6 +13,7 @@ dotenv.config();
 
 app.use(express.json());
 
+app.use("/", productRoutes);
 app.use("/", userRoutes);
 
 app.get("/", (req, res) => res.send("Hello From Express"));
